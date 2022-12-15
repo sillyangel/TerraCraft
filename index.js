@@ -1,18 +1,22 @@
-const selectElem = document.getElementById('choose');
-// When a new <option> is selected
-selectElem.addEventListener('change', () => {
-  const index = selectElem.selectedIndex;
-})
+// const selectElem = document.getElementById('choose');
+// // When a new <option> is selected
+// selectElem.addEventListener('change', () => {
+//   const index = selectElem.selectedIndex;
+// })
+// 
+// function pbc() {
+//     const selectElem = document.getElementById('choose');
+//     if(index == 1) {
+//         alert(index);
+//     }
+// }
 
-function pbc() {
-    const selectElem = document.getElementById('choose');
-    if(index == 1) {
-        alert(index);
-    }
-}
-
-function divied(x, y) {
-    return x/y;
-}
-
-alert(divied(2, 1))
+var button = document.getElementById('PlayButton');
+button.onclick = function() {
+  var select = document.getElementById('choose').value;
+  if (select == 1) {
+    window.location.href = 'http://www.google.com';
+  } else {
+    window.location.href = 'http://www.bing.com';
+  }
+};
